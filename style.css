@@ -27,20 +27,25 @@ nav {
 .item4 { grid-area: right; }
 .item5 { grid-area: paragraph; } */
 
+.item0 { grid-area: title; }
 .item1 { grid-area: header; }
 .item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
+.item3 { grid-area: img; }
+.item4 { grid-area: main; }
 .item5 { grid-area: footer; }
 
 .grid-container {
   grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
-  grid-gap: 10px;
+    'title  title   title   title'
+    'header header  header  header'
+    'img    img     img     menu'
+    'img    img     img     menu'
+    'img    img     img     menu'
+    'main   main    main    menu'
+    'main   main    main    menu'
+    'main   main    main    menu'
+    'footer footer  footer  footer';
   background-color: #2196F3;
-  padding: 10px;
 }
 
 .grid-container > div {
