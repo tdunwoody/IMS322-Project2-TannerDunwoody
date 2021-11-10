@@ -45,10 +45,12 @@ nav {
 
 .grid-container {
   display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
   grid-template-areas:
-    'header   header  header  header  header  header'
-    'menu     main    main    main    right   right'
-    'menu     footer  footer  footer  footer  footer';
+    "header   header  header  header  header  header"
+    "menu     main    main    main    right   right"
+    "menu     footer  footer  footer  footer  footer";
   grid-gap: 10px;
   background-color: #2196F3;
   padding: 10px;
