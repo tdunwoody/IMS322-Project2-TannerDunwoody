@@ -20,18 +20,35 @@ nav {
     justify-content: space-between;
 
 }
-.item1 { grid-area: Title; }
+
+/* .item1 { grid-area: Title; }
 .item2 { grid-area: compList; }
 .item3 { grid-area: image; }
 .item4 { grid-area: right; }
-.item5 { grid-area: paragraph; }
+.item5 { grid-area: paragraph; } */
+
+.item-a {
+  grid-area: header;
+}
+.item-b {
+  grid-area: main; 
+}
+.item-c {
+  grid-area: menu;
+}
+.item-d {
+  grid-area: right;
+}
+.item-e {
+  grid-area: footer;
+}
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
+    'header   header  header  header  header  header'
+    'menu     main    main    main    right   right'
+    'menu     footer  footer  footer  footer  footer';
   grid-gap: 10px;
   background-color: #2196F3;
   padding: 10px;
