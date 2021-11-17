@@ -15,6 +15,9 @@ nav {
 }
 .item0 { 
   grid-area: title; 
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
 }
 .item1 {
    grid-area: header; 
@@ -28,9 +31,6 @@ nav {
 .item4 { 
   grid-area: Paragraph; 
 }
-.item5 { 
-  grid-area: footer; 
-}
 
 .grid-container {
   grid-template-areas:
@@ -41,8 +41,7 @@ nav {
     'img    img     img     menu'
     'main   main    main    menu'
     'main   main    main    menu'
-    'main   main    main    menu'
-    'footer footer  footer  footer';
+    'main   main    main    menu';
   background-color: #2196F3;
 
 }
