@@ -15,21 +15,38 @@ nav {
 }
 .item0 { 
   grid-area: title; 
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
 }
 .item1 {
-   grid-area: header; 
+   grid-area: header;
+   grid-column-start: 1;
+   grid-column-end: 2;
+   grid-row-start: 2;
+   grid-row-end: 2;
   }
 .item2 { 
   grid-area: menu; 
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 8;
 }
 .item3 { 
   grid-area: img; 
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 5;
 }
 .item4 { 
   grid-area: Paragraph; 
-}
-.item5 { 
-  grid-area: footer; 
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 6;
+  grid-row-end: 8;
 }
 
 .grid-container {
@@ -41,8 +58,7 @@ nav {
     'img    img     img     menu'
     'main   main    main    menu'
     'main   main    main    menu'
-    'main   main    main    menu'
-    'footer footer  footer  footer';
+    'main   main    main    menu';
   background-color: #2196F3;
 
 }
