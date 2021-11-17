@@ -22,18 +22,34 @@
 }
 </style>
 <body>       
+  <div class="grid-container">
+    <div class="item0">Title</div>
+    <div class="item1">Header</div>
+    <div class="item2">Menu</div>
+    <div class="item3">Image</div>
+    <div class="item4">Paragraph</div>
+  </div>
+
   <div class="container">
-    <h4>How To Change A Tire</h4>
+    <div class="row"><h1>TITLE</h1></div>
+    <h4>HEADER</h4>
+    If you want an asymmetrical layout of some kind, e.g. with taller columns spanning multiple
+    rows mixed in with 1-row elements, you need to do some nesting (look in the HTML so see what I mean).
     <div class="row">
-        <h5>Header</h5>
-        A row is a wrapper for columns. Boostrap uses a 12 column system you can think
-        of the page as being constructed from 12 columns, and an element can be anywhere from 1-12 columns wide. <br><br>
-        "In a grid layout, content must be placed within columns and only columns may be immediate children of rows." <br><br>
-        Notice that this text inside a row has no default padding, only container and column classes do.
-        It's probably best practice not to put any actual content in the row element itself, only in the embedded column elements.
-        <div class="col-4">4 columns wide</div>
-        <div class="col-6">6 columns wide</div>
-        <div class="col-2">2 columns wide</div>
+        <div class="col-4" style="min-height: 16em;">
+            This is the one circumstance where a style attribute is required to achieve our desired layout -
+            by applying a minimum height (see the inline style in the HTML).
+        </div>
+        <div class="col-8">
+          <div class="row">
+            <div class="col-12">1 row tall</div>
+            <div class="col-12" style="min-height: 8em;">
+                Somewhat confusingly, the space of this nested row is ALSO based on a 12
+                column system e.g.the element below is set to be 4 columns wide, while this one is set to 12.
+            </div>
+            <div class="col-4">1 row tall</div>
+          </div>
+        </div>
     </div>
 </div>
 </body>
