@@ -1,11 +1,29 @@
-// Project 2 JavaScript
+let guideImage = document.getElementById("guideImage");
 
-const VueApp = {
-    data() {
-      return {
-        message: "Vue is working!"
-      }
-    }
-  }
+function stepOne(){
   
-Vue.createApp(VueApp).mount('#hello-vue')
+}
+
+function stepTwo(){
+  
+}
+
+function stepThree(){
+  
+}
+
+function stepFour(){
+  
+}
+
+function stepFive(){
+  
+}
+
+function stepSix(){
+  
+}
+
+function stepQuiz(){
+  
+}
