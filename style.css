@@ -12,6 +12,7 @@ div {
   color:black;
 }
 
+
 nav {
     display: flex;
     flex-direction: column;
@@ -23,6 +24,9 @@ nav {
 
 h1, p {
   padding: 20px;
+}
+h4 {
+  color: white;
 }
 
 .container {
