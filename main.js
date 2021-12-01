@@ -17,13 +17,13 @@ function stepTwo(){
 function stepThree(){
   headerText.innerHTML = "Step 3: Remove Tire"
   guideImage.src ="step3image.jpg"
-  guideText.innerHTML = "Take off the tire and wheel assembly and put it to the side"
+  guideText.innerHTML = "Take off the tire and wheel assembly and put it to the side, or place your tire back into the spare tire location."
 }
 
 function stepFour(){
   headerText.innerHTML = "Step 4: Put New Tire On"
   guideImage.src ="step4image.jpg"
-  guideText.innerHTML = "Retrieve your spare tire and put it onto the wheel."
+  guideText.innerHTML = "Retrieve your spare tire (usually stored in trunk, or underneath vehicle) and match the holes of the new wheel with the stud bolts on the car and and set the wheel on the studs."
 }
 
 function stepFive(){
@@ -42,4 +42,10 @@ function stepQuiz(){
   headerText.innerHTML = "Recap Quiz"
   guideImage.src ="stepQuizimage.jpg"
   guideText.innerHTML = "work in progress......."
+  let q1 = document.createElement("input");
+  q1.id = "answer"; q1.type = "radio"; q1.name = "Group 1"; q1.value = "correct";
+  guideText.appendChild(q1);
+
+  //id/type/name/value
+  
 }
