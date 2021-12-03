@@ -40,12 +40,6 @@ function stepSix(){
 
 function stepQuiz(){
   headerText.innerHTML = "Recap Quiz"
-  guideImage.src ="stepQuizimage.jpg"
-  guideText.innerHTML = "work in progress......."
-  let q1 = document.createElement("input");
-  q1.id = "answer"; q1.type = "radio"; q1.name = "Group 1"; q1.value = "correct";
-  guideText.appendChild(q1);
-
-  //id/type/name/value
+  guideImage.src ="recappicture.png"
   
 }
